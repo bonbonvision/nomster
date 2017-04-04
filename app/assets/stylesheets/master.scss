@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import "bootstrap";
 
 .booyah-box {
@@ -25,5 +26,11 @@ body {
 .navbar {
   background: image_url('ep_naturalblack.png');
   box-shadow: 0px 1px 3px #2a2a2a;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #59F766;
+  font-family: 'Indie Flower', cursive;
+  font-size: 26px;
 }
 
