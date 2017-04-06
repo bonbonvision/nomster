@@ -5,7 +5,12 @@ class PlacesController < ApplicationController
       respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @pins }
-end
+    end
   end
+
+def new
+  @place = Place.new
+end
+
 end
 

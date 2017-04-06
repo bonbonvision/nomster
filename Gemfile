@@ -53,3 +53,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Include will_paginate
 gem 'will_paginate', '~> 3.1.5'
+
+# Include simple_form
+gem 'simple_form'
