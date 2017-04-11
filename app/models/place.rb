@@ -1,6 +1,7 @@
 class Place < ApplicationRecord
   belongs_to :user
-  validates :name, presence: true
+  validates :name, :address, :description, presence: true
+  validates :description, :address, length: {minimum: 3 }
 
   def self.search(term, page)
     if term
