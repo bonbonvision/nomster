@@ -25,6 +25,7 @@ class PlacesController < ApplicationController
   def show
     @place = Place.find(params[:id])
     @comment = Comment.new
+    @photo = Photo.new
   end
 
   def edit
@@ -59,6 +60,15 @@ class PlacesController < ApplicationController
      
     @place.destroy
     redirect_to root_path
+  end
+
+  def create
+    @photo = current_user.photos.create(photo_params)
+    if @photo.valid?
+      redirect_to root_path
+    else 
+      render :new, status: :unprocessable_entity
+    end
   end
 
   private
