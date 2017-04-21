@@ -62,14 +62,6 @@ class PlacesController < ApplicationController
     redirect_to root_path
   end
 
-  def create
-    @photo = current_user.photos.create(photo_params)
-    if @photo.valid?
-      redirect_to root_path
-    else 
-      render :new, status: :unprocessable_entity
-    end
-  end
 
   private
 

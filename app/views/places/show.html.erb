@@ -90,3 +90,10 @@
     <% end %>
   </div>
 </div>
+
+<h1>Upload a photo</h1>
+  <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+    <%= f.input :photo, as: :file %>
+    <%= f.input :caption %>
+    <%= f.submit "Upload Your Photo", class: 'btn btn-outline-primary' %>
+  <% end %>
