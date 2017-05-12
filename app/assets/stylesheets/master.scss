@@ -32,7 +32,7 @@ body {
 }
 
 .navbar-inverse .navbar-brand {
-  color: #59F766;
+  color: #5EE4FF;
   font-family: 'Handlee', cursive;
   font-size: 26px;
 }
@@ -115,13 +115,21 @@ blockquote p {
 
 .carousel-caption {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 60px;
-  font-weight: 100;
-  text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  position: absolute;
-  left: 0;
+  text-align: left;
+  padding-bottom: 200px;
+  line-height: 3em;
+}
+
+.nom {
+  font-size: 50px;
+}
+
+.color {
+  color: #5EE4FF;
+}
+
+.origin {
+  text-transform: uppercase;
 }
 
 .carousel {
