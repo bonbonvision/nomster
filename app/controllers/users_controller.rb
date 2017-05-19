@@ -1,16 +1,15 @@
 class UsersController < ApplicationController
 
-  def new
-    @user = User.find(params[:id])
-  end
-
   def show
     @user = User.find(params[:id])
   end
 
-  def edit 
+  def edit
+    byebug 
     if !current_user || current_user.id != params[:id].to_i
       render status: :forbidden 
+    else
+      @user = current_user
     end
   end 
 
