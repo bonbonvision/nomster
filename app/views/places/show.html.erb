@@ -116,17 +116,15 @@
 
 <div class="container">
   <div class="row">
-
-  
-  <div class="regular">
-    <% @place.photos.each do |photo| %>
-      <div><%= image_tag photo.picture %></div>
-      <div><%= image_tag photo.picture %></div>
-      <div><%= image_tag photo.picture %></div>
+    <div class="regular">
+      <% @place.photos.each do |photo| %>
+        <div><%= image_tag photo.picture %></div>
+        <div><%= image_tag photo.picture %></div>
+        <div><%= image_tag photo.picture %></div>
+      <% end %>
     </div>
-  <% end %>
   </div>
- </div>     
+</div>     
 
 
 <div class="clear"></div>
