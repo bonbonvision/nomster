@@ -113,15 +113,15 @@
 <div class="clear"></div>
 
 <!-- Photo Display -->
-
-<div class="col-10 offset-1">
-  <div class="responsive">
-    <% @place.photos.each do |photo| %>
-      <div><%= image_tag photo.picture %></div>
-    <% end %>
-  </div>
-</div>     
-
+<div class="container">
+  <div class="col-10 offset-1">
+    <div class="places-slider">
+      <% @place.photos.each do |photo| %>
+        <div class="img-fluid"><%= image_tag photo.picture %></div>
+      <% end %>
+    </div>
+  </div>     
+</div>
 
 <div class="clear"></div>
 
